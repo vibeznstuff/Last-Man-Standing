@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel='stylesheet' href='style.css'/>
+	<script src='script.js'></script>
+</head>
+<body>
+    <h3> Last Man Standing </h3>
+    <form id="decisions">
+        <input type="button" value="Start/Resume" onclick="Resume()">
+        <input type="button" value="Pause" onclick="Pause()">
+        <br>
+        <input type="button" value="Add Human (Cost 2 pts)" onclick="upgradeHumans()">
+        <br>
+        <input type="button" value="Health Upgrade [+50] (Cost 10 pts)" onclick="upgradeHealth()">
+        <br>
+        <input type="button" value="Attack Upgrade [+20] (Cost 5 pts)" onclick="upgradeAttack()">
+        <br>
+        <input type="button" value="Defense Upgrade [+20] (Cost 10 pts)" onclick="upgradeDefense()">
+        <br>
+        <input type="button" value="Range Upgrade [+1] (Cost 50 pts)" onclick="upgradeRange()">
+    </form>
+    <h4 id="soul count"></h4>
+    <h4 id="humans"></h4>
+    <h4 id="points"></h4>
+    <p id="demon status"></p>
+    <br>
+    <p id="desc"></p>
+    <p id="human status"></p>
+    <div id="board"></div>
+</body>
+</html>
